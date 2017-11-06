@@ -1,6 +1,6 @@
 class School
 
-  
+
   def initialize(name)
     @name = name
     @roster = {}
@@ -9,7 +9,7 @@ class School
    def roster
      @roster
    end
-   
+
    def add_student(name,grade)
     if @roster[grade] != nil
       @roster[grade] << name
@@ -26,6 +26,6 @@ class School
     @roster.each do |key, value|
       value.sort!
     end
-  end 
-  
+  end
+
 end
